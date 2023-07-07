@@ -1,0 +1,41 @@
+{
+    "resourceName": "AADAdminConsentRequestPolicy",
+    "description": "This resource configures an Azure AD Admin Consent Request Policy.",
+    "permissions":    {
+    "graph":  {
+                  "delegated":  {
+                                    "read":  [
+                                                 {
+                                                     "name":  "Directory.Read.All"
+                                                 },
+                                                 {
+                                                     "name":  "Policy.Read.All"
+                                                 },
+                                                 {
+                                                     "name":  "Policy.ReadWrite.ConsentRequest"
+                                                 }
+                                             ],
+                                    "update":  [
+
+                                               ]
+                                },
+                  "application":  {
+                                      "read":  [
+                                                   {
+                                                       "name":  "Directory.Read.All"
+                                                   },
+                                                   {
+                                                       "name":  "Policy.Read.All"
+                                                   },
+                                                   {
+                                                       "name":  "Policy.ReadWrite.ConsentRequest"
+                                                   }
+                                               ],
+                                      "update":  [
+
+                                                 ]
+                                  }
+              }
+}
+
+}
