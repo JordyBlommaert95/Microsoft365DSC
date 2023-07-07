@@ -259,7 +259,7 @@ function Set-TargetResource
         }
         #region resource generator code
         $CreateParameters.Add("@odata.type", "#microsoft.graph.AdminConsentRequestPolicy")
-        $policy = New-MgPolicyAdminConsentRequestPolicy 
+        $policy = New-MgPolicyAdminConsentRequestPolicy
         #endregion
     }
     elseif ($Ensure -eq 'Present' -and $currentInstance.Ensure -eq 'Present')
@@ -281,14 +281,14 @@ function Set-TargetResource
         }
         #region resource generator code
         $UpdateParameters.Add("@odata.type", "#microsoft.graph.AdminConsentRequestPolicy")
-        Update-MgPolicyAdminConsentRequestPolicy 
+        Update-MgPolicyAdminConsentRequestPolicy
         #endregion
     }
     elseif ($Ensure -eq 'Absent' -and $currentInstance.Ensure -eq 'Present')
     {
-        Write-Verbose -Message "Removing the Azure AD Admin Consent Request Policy with Id {$($currentInstance.Id)}" 
+        Write-Verbose -Message "Removing the Azure AD Admin Consent Request Policy with Id {$($currentInstance.Id)}"
         #region resource generator code
-Remove-MgPolicyAdminConsentRequestPolicy 
+Remove-MgPolicyAdminConsentRequestPolicy
         #endregion
     }
 }

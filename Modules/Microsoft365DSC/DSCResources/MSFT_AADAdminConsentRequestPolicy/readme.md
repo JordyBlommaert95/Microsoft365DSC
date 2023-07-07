@@ -3,4 +3,5 @@
 
 ## Description
 
-Azure AD Admin Consent Request Policy
+This resource configures the Azure Active Directory Admin Consent Request Policy.
+
